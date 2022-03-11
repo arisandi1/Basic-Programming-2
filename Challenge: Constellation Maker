@@ -1,0 +1,20 @@
+var xPositions = [287, 100];
+var yPositions = [294, 112];
+
+var drawStars = function() {
+    background(163, 101, 245);
+    textSize(30);
+    text("Hipster Hopper!!!!", 89, 42);
+    imageMode(CENTER);
+    for (var i = 0; i < yPositions.length; i++) {
+        image(getImage("creatures/Hopper-Cool"), xPositions[i], yPositions[i], 100, 100);
+    }
+};
+
+drawStars();
+
+mouseClicked = function() {
+    xPositions.push (mouseX);
+    yPositions.push(mouseY);
+    drawStars();
+};
