@@ -1,0 +1,32 @@
+background(0, 251, 255);
+
+fill(255, 0, 217);
+textSize(19);
+text("CHECK OUT THIS AWESOME RULER!", 45, 101);
+
+text("JUST KIDDING.It's better than awesome.", 41, 133);
+text("BEAT THAT!", 150, 285);
+noStroke();
+fill(255, 245, 46);
+ellipse(206, 203, 100, 100);
+fill(0, 0, 0);
+ellipse(186, 193, 20, 20);
+fill(0, 0, 0);
+ellipse(225, 193, 20, 20);
+fill(255, 120, 246);
+arc(207, 220, 25, 25, 0, 180);
+
+textSize(14);
+fill(38, 0, 255);
+// a handy dandy ruler across the top
+
+var x = 0;
+while (x < 400){
+text(x, x, 10); 
+x+=50;
+}
+var y = 0;
+while(y < 400){
+    text(y, 0, y);
+    y+=50;
+}
