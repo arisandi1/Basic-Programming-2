@@ -1,0 +1,12 @@
+var recipe = {
+    title: "Banana Bread",
+    servings: 3,
+    ingredients: ["Flour", "Water", "Banana"]
+};
+background(41, 0, 0);
+fill(255, 0, 255);
+textSize(20);
+text(recipe.title, 10, 23);
+text("Serves: " + recipe.servings, 10, 55);
+text("Ingredients: " + recipe.ingredients, 10, 85);
+
