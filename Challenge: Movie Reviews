@@ -1,0 +1,23 @@
+var movies = [
+    {
+        title: "Puff the Magic Dragon",
+        review: "Best movie ever!!"
+        
+    },
+    {
+        title: "I Hate Chris+6+",
+        review: "Chris is Trash"
+        
+    }
+];
+background(255, 0, 0);
+for( var i = 0; i < movies.length; i++) {
+fill(205, 217, 31);
+textAlign(CENTER, CENTER);
+textSize(20);
+text(movies[i].title, 200,60 * i + 44);
+textSize(15);
+text(movies[i].review, 201, 60 * i + 80);
+}
+
+
