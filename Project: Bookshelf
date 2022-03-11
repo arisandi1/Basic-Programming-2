@@ -1,0 +1,153 @@
+background(148, 92, 8);
+var book = {
+    title: "Cinder",
+    stars: 5
+};
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 120, width, 10);
+rect(0, 243, width, 10);
+// draw one book
+
+fill(78, 95, 99);
+noStroke();
+rect(10, 20, 90, 100);
+fill(0, 0, 0);
+image(getImage("cute/Heart"), 10, -9, 87, 139);
+textSize(20);
+text(book.title, 27, 60);
+
+for (var i = 0; i < book.stars; i++) {
+    image(getImage("cute/Star"), 10 + i * 18, 90, 20, 30);
+}
+var books = {
+    title: "Scarlet",
+    stars: 5
+};
+ fill(128, 98, 199);
+ rect(128, 10, 100, 110);
+ fill(255, 255, 255);
+ image(getImage("avatars/piceratops-ultimate"), 127, 14, 100, 100);
+ textSize(20);
+ text(books.title, 152, 70);
+for(var b = 0; b< books.stars; b++){
+    image(getImage("cute/Star"), 133 + b * 17, 87, 20, 30);
+}
+
+var books2 = {
+    title: "Cress",
+    stars: 5
+};
+fill(117, 10, 204);
+noStroke();
+rect(260, 20, 100, 100);
+fill(0, 0, 0);
+image(getImage("space/girl3"), 250, 4, 150, 150);
+textSize(20);
+text(books2.title, 283, 41);
+for(var j = 0; j < books2.stars; j++){
+    image(getImage("space/star"), 260 + j * 19, 90, 25, 23);
+}
+
+var books3 = {
+    title: "Wonder", 
+    stars: 3
+};
+noStroke();
+fill(142, 250, 250);
+rect(34, 142, 76, 101);
+image(getImage("avatars/questionmark"), 47, 176, 50, 50);
+textSize(20);
+fill(0, 0, 0);
+text(books3.title, 38, 174);
+for(var k = 0; k < books3.stars; k++){
+    image(getImage("space/star"), 38 + k * 24, 223, 20, 20);
+    
+}
+fill(97, 59, 26);
+
+rect(76, 283, 259, 111);
+fill(212, 185, 30);
+
+rect(93, 301, 221,78);
+fill(0, 0, 0);
+text("#1 Books of the Month!", 97, 349);
+fill(77, 77, 77);
+ellipse(103, 313, 10, 10);
+ellipse(103, 371, 10, 10);
+ellipse(302, 313, 10, 10);
+ellipse(302, 371, 10, 10);
+
+
+
+
+var book = {
+    title: "The Giver",
+    stars: 4
+    
+};
+var Book2 = {
+    title: "The Enemy",
+    Stars: 4
+    };
+var Book3 ={
+    title: "Deathnote", 
+    Stars: 4
+
+};
+var Book4 = {
+title: "Harry Potter",
+Stars : 4
+};
+
+background(133, 91, 12);
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 120, width, 10);
+
+// draw one book
+fill(166, 166, 166);
+rect(10, 20, 90, 100);
+fill(0, 0, 0);
+text(book.title, 15, 29, 70, 100);
+image(getImage("avatars/piceratops-seed"),20,23,68,76);
+
+for (var i = 0; i < book.stars; i++) {
+    image(getImage("cute/Star"), 13 + i * 20, 90, 20, 30);
+}
+
+//Book 2
+fill(0, 255, 30);
+rect(105, 20, 90, 100);
+fill(0, 0, 0);
+text(Book2.title, 120, 29, 70, 100);
+image(getImage("avatars/questionmark"),124,33,56,67);
+
+for (var i = 0; i < Book2.Stars; i++) {
+    image(getImage("cute/Star"), 110 + i * 20, 90, 20, 30);
+}
+
+//Book 3
+
+fill(255, 255, 255);
+rect(200, 20, 90, 100);
+fill(0, 0, 0);
+text(Book3.title, 215, 29, 70, 100);
+image(getImage("avatars/starky-ultimate"), 204,47,77,57);
+
+for (var i = 0; i < Book3.Stars; i++) {
+    image(getImage("cute/Star"), 205 + i * 20, 90, 20, 30);
+}
+
+//Book 4
+fill(255, 55, 0);
+rect(295, 20, 90, 100);
+fill(0, 0, 0);
+text(Book4.title, 305, 29, 70, 100);
+image(getImage("avatars/spunky-sam-red"), 302,47,80,52);
+
+for (var i = 0; i < Book4.Stars; i++) {
+    image(getImage("cute/Star"), 301 + i * 20, 90, 20, 30);
+}
