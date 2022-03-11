@@ -1,0 +1,18 @@
+var array = [ "Apple", "orange", "banana"];
+background(0, 0, 0);
+textSize(23);
+
+fill(255, 0, 0);
+text(array[0], 160, 80, 133, 167); 
+fill(255, 162, 0);
+text(array[1], 160, 120, 133, 167); 
+fill(238, 255, 0);
+text(array[2], 160, 160, 133, 167); 
+fill(174, 255, 120);
+text(array[3], 160, 200, 133, 167); 
+fill(67, 54, 255);
+text(array[4], 160, 240, 133, 167); 
+fill(146, 45, 240);
+text(array[5], 160, 280, 133, 167); 
+fill(255, 255, 255);
+text("My top " +  array.length  + " favorite fruits", 87,31,621,162);
