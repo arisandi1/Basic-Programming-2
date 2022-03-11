@@ -1,0 +1,111 @@
+/*************
+*OBJECT TYPES
+**************/
+/******************
+*Flower Object Type
+*******************/
+var Flower = function(x,y, height) {
+    this.x=x;
+    this.y=y;
+    this.height=height;
+};
+Flower.prototype.growBy = function(amount) {
+    this.height+= 2*amount;
+};
+
+
+/*****************
+*Tulip Object Type
+******************/
+var Tulip = function(x, y, height) {
+    Flower.call(this,x,y, height);
+    };
+Tulip.prototype = Object.create(Flower.prototype);
+
+Tulip.prototype.draw = function() {
+    noStroke();
+    fill(17, 255, 0);
+    rect(this.x, this.y, 9, -this.height);
+    fill(245, 71, 71);
+    // petals
+    ellipse(this.x+5, this.y-this.height, 44, 44);
+    triangle(this.x-16, this.y-this.height, 
+            this.x+20, this.y-this.height,
+            this.x-20, this.y-this.height-31);
+    triangle(this.x-14, this.y-this.height, 
+            this.x+24, this.y-this.height,
+            this.x+3, this.y-this.height-39);
+    triangle(this.x+-4, this.y-this.height, 
+            this.x+26, this.y-this.height,
+            this.x+29, this.y-this.height-36);
+};
+
+
+
+
+/*********************
+*Sunflower Object Type
+**********************/
+var Sunflower = function(x, y, height) {
+    Flower.call(this,x,y,height);
+};
+Sunflower.prototype=Object.create(Flower.prototype);
+Sunflower.prototype.draw = function() {
+    fill(13, 128, 49);
+    
+    rect(this.x, this.y, 10, -this.height);
+    
+    // petals
+    fill(255, 0, 238);
+    ellipse(this.x-10, this.y-this.height, 20, 18);
+    ellipse(this.x+5, this.y-this.height-15, 20, 18);
+    ellipse(this.x+5, this.y-this.height+15, 20, 18);
+    ellipse(this.x+20, this.y-this.height, 20, 18);
+    fill(238, 255, 0);
+    ellipse(this.x+5, this.y-this.height, 20, 20);
+};
+
+/**************
+*MAIN PROGRAM
+***************/
+
+/** create object instances **/
+var tulip = new Tulip(137, 349, 150);
+var sunflower = new Sunflower(198, 349, 100);
+var t= new Tulip(279, 349, 40);
+var s = new Sunflower(72, 349, 30);
+
+var drawScene = function() {
+    background(102, 166, 255);
+    fill(235, 235, 235);
+    
+    fill(140, 75, 10);
+    rect(-11, 342, 411, 59);
+    fill(255, 255, 0);
+    ellipse(53, 56, 64, 64);
+    tulip.draw();
+    sunflower.draw();
+    t.draw();
+    s.draw();
+};
+
+mouseClicked = function() {
+    tulip.growBy(10);
+    sunflower.growBy(20);
+    t.growBy(25);
+    s.growBy(10);
+    drawScene();
+};
+
+drawScene();
+var x = 20;
+var y = 20;
+draw = function() {
+    x += 3;
+    y += 3; 
+    fill(66, 57, 57);
+    noStroke();
+    ellipse(x+1, 10, 85, 48);
+    ellipse(x+1, 67, 85, 48);
+    ellipse(y+1, 130, 91, 48);
+};
