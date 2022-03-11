@@ -1,0 +1,32 @@
+fill(14, 15, 14);
+ellipse(201, 199, 375, 375);
+fill(9, 0, 255);
+ellipse(200, 222, 200, 200);
+fill(255, 255, 255);
+var answer = floor(random(1, 6));
+if (answer === 1) {
+    text("WHAT'S SO", 165, 200);
+    text("MAGICAL ABOUT", 152, 231); 
+    text("THE NUMBER 8?", 153, 260);
+    
+}
+if (answer === 2) {
+    text("I'M NOT", 179, 195);
+    text("MAGICAL!!!", 171, 212);
+    text("NOW STOP", 170, 229);
+    text("ASKING ME THESE", 143, 248);
+    text("DUMB QUESTIONS!!!", 144, 263);
+}
+if (answer === 3) {
+    text("WHY WOULD I", 160, 211); 
+    text("KNOW THAT?", 165, 230);
+} 
+if(answer === 4) {
+    text("ABSOLUTELY NOT.", 147, 218);
+}
+if(answer === 5) {
+    text("HONEY, I'M", 170, 198);
+    text(" NOT THE ONE", 154, 221);
+    text("YOU SHOULD BE", 152, 243);
+    text("ASKING.", 180, 264);
+}
