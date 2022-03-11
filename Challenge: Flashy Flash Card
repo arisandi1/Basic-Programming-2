@@ -1,0 +1,14 @@
+draw = function() {
+    background(17, 255, 0);
+    fill(186, 48, 255);
+    rect(20, 100, 364, 200);
+
+    fill(0, 0, 0);
+    textSize(20);
+    
+if (mouseIsPressed) {
+    text("It's called JavaScript. Duh...", 83, 200);
+}
+else {
+text("What programming language is this?", 39, 200);}
+};
