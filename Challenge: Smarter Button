@@ -1,0 +1,24 @@
+var Xpos= 200;
+var Ypos=200; 
+
+draw = function() {
+    fill(0, 255, 68); // start color
+
+    if (mouseIsPressed && mouseX>50 && mouseX<300 && mouseY<250 && mouseY>150) { 
+        fill(1,23,123); // click color
+
+     Xpos +=4;
+     Ypos += 4;
+    ellipse(200,200, Xpos,Ypos); 
+    
+    }
+    rect(50, 150, 250, 100);  // the button
+
+    // The button text
+    fill(0, 0, 0);
+    textSize(30);
+    text("DO NOT PRESS", 62, 209);
+
+
+
+};
