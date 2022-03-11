@@ -1,0 +1,33 @@
+var Rainbow = function(radius,x,y) {
+    this.radius=radius;
+    this.x=x;
+    this.y=y;
+};
+
+var drawRainbow = function(rainbow) {
+    noFill();
+    strokeWeight(5);
+    stroke(255, 0, 0);
+    arc(rainbow.x, rainbow.y, rainbow.radius, rainbow.radius, 180, 360);
+    stroke(250, 200, 0);
+    arc(rainbow.x, rainbow.y, rainbow.radius-10, rainbow.radius-10, 180, 360);
+    stroke(240, 255, 102);
+    arc(rainbow.x, rainbow.y, rainbow.radius-20, rainbow.radius-20, 180, 360);
+    stroke(29, 255, 13);
+    arc(rainbow.x, rainbow.y, rainbow.radius-30, rainbow.radius-30, 180, 360);
+    stroke(122, 155, 255);
+    arc(rainbow.x, rainbow.y, rainbow.radius-40, rainbow.radius-40, 180, 360);
+};
+
+var rbow = new Rainbow(235,203,269);
+drawRainbow(rbow);
+var tbow = new Rainbow(315,201,270);
+drawRainbow(tbow);
+var dbow = new Rainbow(168,204,268);
+drawRainbow(dbow);
+var zbow = new Rainbow(104,207,267);
+drawRainbow(zbow);
+var mbow = new Rainbow(388,201,273);
+drawRainbow(mbow);
+var ybow = new Rainbow(38,208,267);
+drawRainbow(ybow);
