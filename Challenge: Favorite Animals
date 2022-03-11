@@ -1,0 +1,37 @@
+background(189, 189, 189);
+
+fill(252, 252, 252);
+ellipse(189,246,337,238);
+fill(235, 146, 87);
+triangle(96, 153,25,216,23,70);
+triangle(341, 200,262,151,360,69);
+//eyes
+fill(0, 196, 255);
+ellipse(120,214,40,40);
+ellipse(253,214,40,40);
+//nose
+fill(255, 153, 223);
+ellipse(188,270,34,34);
+//whiskers
+line(170,265,70,233);
+line(172,270,67,253);
+line(173,281,70,269);
+line(295,252,205,267);
+line(297,261,205,273);
+line(295,275,202,282);
+fill(0, 0, 0);
+ellipse(189,315,70,23);
+
+
+
+var X = ["cats", "mice", "dogs", "fish", "birds" ];
+
+fill(255, 0, 0);
+
+text("My top five animals",136,21,213,23);
+
+var pet = 0; 
+while( pet < X.length) {
+       text( X[pet],170,75*pet+77); 
+    pet++;
+}
