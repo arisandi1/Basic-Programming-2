@@ -1,0 +1,27 @@
+background(97, 0, 153);
+stroke(0, 255, 204);
+fill(242, 0, 255);
+ellipse(200, 200, 150, 150);
+fill(255, 255, 255);
+text("I'm behind lines!", 158, 296);
+fill(0, 0, 0);
+ellipse(167, 177, 20, 20);
+ellipse(229, 177, 20, 20);
+arc(201, 248, 70, 90, -180, 0);
+/*
+var i = 0;
+while (i < 20) {
+    var lineY = 20 + (i * 20);
+    line(0, lineY, 400, lineY);
+    i++;
+}
+*/
+for( var i=0; i<20 ; i++) {
+    var lineY = 20 + (i * 20);
+    line(0, lineY, 400, lineY);
+}
+
+for(var j = 0; j <20; j++) {
+    var a = 20 + (j*20);
+    line(a, 400, a, 0);
+}
