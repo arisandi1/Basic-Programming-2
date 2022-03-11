@@ -1,0 +1,12 @@
+draw = function() {
+    fill(41, 223, 255); // start color
+    if (mouseIsPressed && mouseY <200) {
+        fill(222, 175, 175);
+    }
+    rect(0, 0, 400, 200);  // the button
+
+    // The button text
+    fill(199, 46, 199);
+    textSize(30);
+    text("Press me!", 145, 115);
+};
