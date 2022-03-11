@@ -1,0 +1,41 @@
+var paintBrush = {
+    x: 220,
+    y: 220,
+    img: getImage("avatars/marcimus-purple")
+};
+
+var paintCanvas = function() {
+    imageMode(CENTER);
+    image(paintBrush.img, paintBrush.x, paintBrush.y);
+}; 
+mouseMoved=function(){
+ paintBrush.x= mouseX;
+ paintBrush.y= mouseY;
+  paintCanvas();  
+    
+};
+var xPositions = [10,200];
+var yPositions = [20,300];
+
+var drawStars = function() {
+    background(9, 5, 59);
+    imageMode(CENTER);
+    for (var i = 0; i < yPositions.length; i++) {
+        image(getImage("space/star"), xPositions[i], yPositions[i], 30, 30);
+    }
+};
+
+drawStars();
+mouseClicked=function() {
+xPositions.push(mouseX);
+yPositions.push(mouseY);
+drawStars();
+};
+ fill(201, 212, 186);
+ ellipse(330,77,100,100);
+fill(196, 196, 176);
+ellipse(313,59,10,10);
+ellipse(345,59,14,13);
+ellipse(331,89,21,10);
+ellipse(313,103,14,10);
+ellipse(337,118,19,10);
